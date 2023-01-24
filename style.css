@@ -2,22 +2,25 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppings', sans-serif;
+    /* font-family: 'Darker Grotesque', sans-serif; */
     box-sizing: border-box;
+    /* text-align: center; */
 }
 html{
     scroll-behavior: smooth;
 }
 body{
     background: #fff; /* #fff; */ 
-    color: #fff;
-    
+    color: rgb(12, 9, 9);  
 }
 #header{
     width: 100%;
-    height: 100vh;
-    background-image: url(images/background.png);
-    background-size: cover;
-    background-position:center;
+    height: 75vh;
+    height: 90vh;
+    
+    /* background-image: url(images/me.png); */
+    /* background-size: cover; */
+    /* background-position:center; */
 }
 .container{
     padding: 10px 10%;
@@ -28,25 +31,26 @@ nav{
     justify-content:space-between;
     flex-wrap:wrap;
 }
-.logo{
+/* .logo{
     width: 140px;
-}
+} */
 nav ul li{
     display:inline-block;
     list-style: none;
     margin: 10px 20px;
 }
 nav ul li a{
-    color: #fff;
+    color: #080808;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
     position: relative;
+    font-family: 'Darker Grotesque', sans-serif;
 }
 nav ul li a::after{
     content:'';
     width: 0%;
     height: 3px;
-    background: #ff004f;
+    background: #4b4a4a;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -55,21 +59,165 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.intropic{
+    /* flex-basis: 35%; */
+    padding: 7% 20%;
+    padding: 7% 16%;
+    padding: 10% 20%;
+}
+.intropic img{
+    /* background-size: cover; */
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
+
+    height: 300px !important;
+    /* height: 370px !important; */
+
+    /* min-width: 275px !important; */
+    position: absolute;
+
+    width: 370px;
+    /* width: 430px; */
+
+    border-radius: 30px;
+}
 .header-text{
-    margin-top: 20%;
-    font-size: 30px;
+    margin-top: 12%;
+    margin-top: 15%;
+
+    font-size: 20px;
+    /* font-size: 23px; */
+
+    padding: 20px 18%;
+    /* padding: 20px 15%; */
+
+    /* position:absolute; */
+}
+.header-text p{
+    font-family: 'Darker Grotesque', sans-serif;
 }
 .header-text h1{
     font-size: 60px;
-    margin-top: 20px;
+    /* font-size: 75px; */
+
+    font-style:normal;
+    margin-top: 10px;
+    font-family: PT, serif;
+    font-family: 'Darker Grotesque', sans-serif;
 }
-.header-text h1 span{
+/* .header-text h1 span{
+    color: #87f115;
+} */
+
+
+/* --------portfolio------------ */
+#portfolio{
+    padding: 50px 0;
+    text-align: center;
+}
+.sub-title h1{
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 60px;
+    /* font-style:normal; */
+    /* margin-top: 100px; */
+}
+/*line up 3 pictures in one line*/
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px; /*gap between grid*/
+    margin-top: 50px; /*make space at top*/
+}
+/*change style of edge*/
+.work{
+    border-radius: 30px; /*edge style*/
+    position: relative; /*??*/
+    overflow: hidden;  /*overflow 자르기?*/
+}
+/* change img size */
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s; /*transform effect*/
+}
+.layer{
+    /* red-color effect */
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),#78aff3);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    
+    /* move words into center */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+
+    /* font size change in layer class */
+    font-size: 14px;
+
+    transition: height 0.5s; /*transition effect*/
+}
+.layer h3{
+    font-weight: 500;
+
+    /* make some space under h3 */
+    margin-bottom: 100px;
+}
+/*change style of link button*/
+.layer a{
+    margin-top: 20px; /*make space at top*/
     color: #ff004f;
+    text-decoration: none; /*?*/
+    font-size: 18px;
+    line-height: 60px;
+    background: #080808;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
 }
+/*make transform effect on img once cursor on it*/
+.work:hover img{
+    transform: scale(1.1); /*how much zoom in*/
+}
+/*change height in layer class once cursor on it*/
+.work:hover .layer{
+    height: 100%;
+}
+/* change style of btn link */
+.btn{
+    display:block;
+    margin: 50px auto; /*make space*/
+    width: fit-content; /*make it smaller */
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px; 
+    text-decoration: none; /*remove underline*/
+    color: 080808; 
+
+    transition: background 0.5s;
+}
+/*change background once cursor on it*/
+.btn:hover{
+    background: #ff004f;
+}
+
 /* <!-- --------------about ----------------- --> */
 #about{
     padding: 80px 0;
-    color: #080808;
+    color: #080808;   
 }
 .row{
     display: flex;
@@ -86,20 +234,14 @@ nav ul li a:hover::after{
 .about-col-2{
     flex-basis: 60%;
 }
-.about-col-1 img{
-    width: 100%;
-    border-radius: 15px;
-}
+/* .about-col-2 h1,p{
+    font-family: 'Poppings', sans-serif;
+} */
 .sub-title{  /*About me section*/
     font-size: 60px;
     font-weight: 600;
     color: #080808;
 }
-/* .about-text h1{    //why this one doesn't work??
-    font-size: 60px;
-    margin-top: 20px;
-} */
-
 .tab-titles{ /*Skill, experience, education section*/
     display: flex;
     margin: 20px 0 40 px;
@@ -176,101 +318,6 @@ nav ul li a:hover::after{
 .services-list div:hover{
     background: #ff004f;
     transform: translateY(-10px);
-}
-
-/* --------portfolio------------ */
-#portfolio{
-    padding: 50px 0;
-}
-/*line up 3 pictures in one line*/
-.work-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px; /*gap between grid*/
-    margin-top: 50px; /*make space at top*/
-}
-/*change style of edge*/
-.work{
-    border-radius: 30px; /*edge style*/
-    position: relative; /*??*/
-    overflow: hidden;  /*overflow 자르기?*/
-}
-/* change img size */
-.work img{
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-
-    transition: transform 0.5s; /*transform effect*/
-}
-
-.layer{
-    /* red-color effect */
-    width: 100%;
-    height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    
-    /* move words into center */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-
-    /* font size change in layer class */
-    font-size: 14px;
-
-    transition: height 0.5s; /*transition effect*/
-}
-.layer h3{
-    font-weight: 500;
-
-    /* make some space under h3 */
-    margin-bottom: 100px;
-}
-/*change style of link button*/
-.layer a{
-    margin-top: 20px; /*make space at top*/
-    color: #ff004f;
-    text-decoration: none; /*?*/
-    font-size: 18px;
-    line-height: 60px;
-    background: #080808;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
-}
-/*make transform effect on img once cursor on it*/
-.work:hover img{
-    transform: scale(1.1); /*how much zoom in*/
-}
-/*change height in layer class once cursor on it*/
-.work:hover .layer{
-    height: 100%;
-}
-/* change style of btn link */
-.btn{
-    display:block;
-    margin: 50px auto; /*make space*/
-    width: fit-content; /*make it smaller */
-    border: 1px solid #ff004f;
-    padding: 14px 50px;
-    border-radius: 6px; 
-    text-decoration: none; /*remove underline*/
-    color: 080808; 
-
-    transition: background 0.5s;
-}
-/*change background once cursor on it*/
-.btn:hover{
-    background: #ff004f;
 }
 
 /* -------------contact-------- */
