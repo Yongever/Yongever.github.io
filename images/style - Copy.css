@@ -264,31 +264,6 @@ nav ul li a:hover::after{
     position: absolute;
 }
 
-.intropic{
-    /* flex-basis: 35%; */
-    padding: 7% 16%;
-    padding: 8% 16%;
-    /* padding: 10% 20%; */
-}
-.intropic img{
-    /* background-size: cover; */
-    box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
-
-    height: 300px !important;
-    height: 350px !important;
-    /* height: 370px !important; */
-
-    /* min-width: 275px !important; */
-    position: absolute;
-
-    width: 370px;
-    width: 410px;
-    /* width: 430px; */
-
-    border-radius: 30px;
-    border: 1px solid #000;
-}
-
 .about-col-2{
     flex-basis: 60%;
 }
@@ -475,17 +450,6 @@ nav .fas{
     }
     .header-text h1{
         font-size:30px;
-    }
-    .intropic{
-        padding: 5% 5%;
-        display: flex;
-        justify-self: center;
-    }
-    .intropic img{
-        position:relative;
-    }
-    .about-col-1 img{
-        position: relative;
     }
     /* make icons visible */
     nav .fas{
