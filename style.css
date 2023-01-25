@@ -470,19 +470,27 @@ nav .fas{
         /* background-image: url(images/phone-background.png); */
     }
     .header-text{
-        margin-top:130%;
+        margin-top:80%;
         font-size: 16px;
+        position:absolute;
+        padding: 20% 30%;
+        text-align: center;
     }
     .header-text h1{
         font-size:30px;
     }
     .intropic{
-        padding: 5% 5%;
-        display: flex;
-        justify-self: center;
+        padding: 0%;
+        margin-top: 5%;
+        /* display: flex;
+        justify-self: center; */
     }
     .intropic img{
-        position:relative;
+        width: 290px;
+        height:350px;
+    }
+    .about-col-1{
+        padding: 0;
     }
     .about-col-1 img{
         position: relative;
@@ -536,5 +544,11 @@ nav .fas{
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
+    }
+    .tab-titles p{
+        display: flex;
+        text-align: center;
+        
+
     }
 }
