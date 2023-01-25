@@ -34,8 +34,12 @@ nav{
     right:10%;
     z-index: 1;
     background-color: white;
-    width:100%
+    width:100%;
 }
+.nav.scrolled {
+    background-color: rgb(232, 111, 111) !important;
+    transition: background-color 200ms linear;
+  }
 /* .logo{
     width: 140px;
 } */
@@ -43,7 +47,6 @@ nav ul li{
     display:inline-block;
     list-style: none;
     margin: 20px 20px;
-    
 }
 nav ul li a{
     color: #080808;
@@ -74,7 +77,7 @@ nav ul li a:hover::after{
     padding: 5% 0%;
 }
 .intropic{
-    /* flex-basis: 35%; */
+    /* flex-basis: %; */
     /* padding: 7% 16%; */
     /* padding: 8% 16%; */
     /* padding: 10% 20%; */
@@ -477,29 +480,32 @@ nav .fas{
     #header{
         /* background-image: url(images/phone-background.png); */
     }
-    /* .container{
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    .intropic{
+        margin-top: 5%;
+        position: relative;
 
-       text-align: center;
-    } */
+        width: 100%;
+        
+        display: flex;
+        justify-content:center;
+    }
+    .intropic img{
+        width: 290px;
+        height:350px;
+    }
     .header-text{
         margin-top:100%;
         font-size: 16px;
         position:absolute;
         text-align: center;
-        /* padding: 0; */
     }
     .header-text h1{
         font-size:30px;
-    }
-    .intropic{
-        padding: 0%;
-        margin-top: 5%;
-        /* display: flex;
-        justify-self: center; */
-    }
-    .intropic img{
-        width: 290px;
-        height:350px;
     }
     .about-col-1{
         padding: 0;
@@ -507,10 +513,13 @@ nav .fas{
     .about-col-1 img{
         position: relative;
     }
+
     /* make icons visible */
     nav .fas{
         display: block;
         font-size:25px;
+        width:0px;
+        margin-top: 12px;
     }
     /* style of navigation bar */
     nav ul{

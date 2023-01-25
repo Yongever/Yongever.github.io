@@ -38,6 +38,7 @@
             </div>
         </div>
     </div>
+    .
 </div>
 <!-- -------------portfolio-------------------- -->
 <div id="portfolio">
@@ -229,6 +230,20 @@
         sidemenu.style.right="-200px";
     }
 
+</script>
+
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+  	        var scroll = $(window).scrollTop();
+	        if (scroll > 300) {
+	            $(".nav").css("background" , "blue");
+	        }
+	else{
+	    $(".nav").css("background" , "#333");  	
+	}
+  })
+})
 </script>
 
 </body>
