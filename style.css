@@ -316,19 +316,15 @@ nav ul li a:hover::after{
 }
 .tab-titles{ /*Skill, experience, education section*/
     display: flex;
-    margin: 20px 0 40 px;
-    padding: 0% 32%;
-    /* justify-content: center; */
+    padding: 0% 17%;
+    justify-content: space-evenly;
 }
 .tab-titles p{
     display: flex;
-    /* margin: 20px 0 40 px; */
-    /* padding: 0% 32%; */
     /* justify-content: center; */
-    /* text-align: center; */
 }
 .tab-links{
-    margin-right: 50px;
+    /* margin-right: 50px; */
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
@@ -340,12 +336,12 @@ nav ul li a:hover::after{
     height: 3px;
     background: #0784f1;
     position: absolute;
-    left: 0;
+    left:0%;
     bottom: -8px;
     transition: 0.5s;
 }
 .tab-links.active-link::after{ /*Skills section 빨간줄*/
-    width: 50%;
+    width: 65%;
 }
 .tab-contents ul li{ /*Contents in tab-titles section*/
     list-style : none;
@@ -505,6 +501,7 @@ nav .fas{
     .intropic img{
         width: 290px;
         height:350px;
+        /* object-fit:contain; */
     }
     .header-text{
         margin-top:100%;
@@ -569,18 +566,8 @@ nav .fas{
     .about-col-2{
         font-size: 14px;
     }
-    .tap-titles{
-        display: flex;
-        flex-wrap: wrap;
-        padding:0;
-        justify-content:center;
-    }
-    /* .tab-titles p{
-        text-align: center;
-    } */
     .tab-links{
         font-size: 16px;
-        /* margin-right: 20px; */
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
