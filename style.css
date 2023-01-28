@@ -450,14 +450,13 @@ nav .fas{
 /* whatever css properties added here will be applicable for the smaller screen */
 
 @media screen and (max-width:1400px){
-    .row{
+    /* .row{
         display: flex;
         flex-wrap: wrap;
         justify-content:space-between;
     }
     .intropic{
         margin-top: 5%;
-        /* position: relative; */
         display: flex;
         justify-content:none;
         padding:8%;
@@ -474,9 +473,33 @@ nav .fas{
     }
     .header-text h1{
         font-size:30px;
+    } */
+    
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
     }
-
-
+    .intropic{
+        margin-top: 5%;
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content:center;
+    }
+    .intropic img{
+        width: 290px;
+        height:350px;
+    }
+    .header-text{
+        margin-top:350px;
+        font-size: 16px;
+        position:relative;
+        text-align: center;
+    }
+    .header-text h1{
+        font-size:30px;
+    }
     nav{
         width:0%;
     }
@@ -535,7 +558,7 @@ nav .fas{
         flex-basis: 100%;
     }
 }
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 1399px) {
     .row{
         display: flex;
         flex-wrap: wrap;
@@ -561,4 +584,31 @@ nav .fas{
     .header-text h1{
         font-size:30px;
     }
-}
+} */
+/* @media screen and (min-width: 769px) and (max-width:1400px) {
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    .intropic{
+        margin-top: 5%;
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content:center;
+    }
+    .intropic img{
+        width: 290px;
+        height:350px;
+    }
+    .header-text{
+        margin-top:350px;
+        font-size: 16px;
+        position:relative;
+        text-align: center;
+    }
+    .header-text h1{
+        font-size:30px;
+    }
+} */
