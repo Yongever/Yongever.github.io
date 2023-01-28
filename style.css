@@ -77,13 +77,11 @@ nav ul li a:hover::after{
     padding: 5% 0%;
 }
 .intropic{
-    /* flex-basis: %; */
     /* padding: 7% 16%; */
-    /* padding: 8% 16%; */
+    padding: 8% 16%;
     /* padding: 10% 20%; */
 }
 .intropic img{
-    /* background-size: cover; */
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
 
     height: 300px !important;
@@ -274,32 +272,6 @@ nav ul li a:hover::after{
     border-radius: 15px;
     position: absolute;
 }
-
-.intropic{
-    /* flex-basis: 35%; */
-    padding: 7% 16%;
-    padding: 8% 16%;
-    /* padding: 10% 20%; */
-}
-.intropic img{
-    /* background-size: cover; */
-    box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
-
-    height: 300px !important;
-    height: 350px !important;
-    /* height: 370px !important; */
-
-    /* min-width: 275px !important; */
-    position: absolute;
-
-    width: 370px;
-    width: 410px;
-    /* width: 430px; */
-
-    border-radius: 30px;
-    border: 1px solid #000;
-}
-
 .about-col-2{
     flex-basis: 60%;
 }
@@ -476,54 +448,35 @@ nav .fas{
     display: none;
 }
 /* whatever css properties added here will be applicable for the smaller screen */
-@media screen and (min-width: 368px){
-    #header{
-        /* width: 100%;
-        height: 90vh; */
-    }
+
+@media screen and (max-width:1024px){
     .row{
         display: flex;
         flex-wrap: wrap;
-        justify-content:center;
+        justify-content:space-between;
     }
-    .container{
-        /* flex-direction: column; */
-    }
-    /* .container > * {
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-    } */
     .intropic{
-        margin-top: 10px;
-        /* margin-top:5%; */
-        position: relative;
-
-        width: 100%;
-        
+        margin-top: 5%;
+        /* position: relative; */
         display: flex;
-        justify-content:center;
+        justify-content:none;
+        padding:8%;
     }
     .intropic img{
         width: 290px;
         height:350px;
-        /* object-fit:contain; */
     }
     .header-text{
-        margin-top:350px;
-        font-size: 16px;
-        position:relative;
+        margin-top:200px;
+        font-size: 23px;
+        padding:0% 5%;
         text-align: center;
     }
     .header-text h1{
         font-size:30px;
     }
-    .about-col-1{
-        padding: 0;
-    }
-    .about-col-1 img{
-        position: relative;
-    }
+
+
     nav{
         width:0%;
     }
@@ -558,7 +511,6 @@ nav .fas{
         left: 25px;
         cursor: pointer;
     }
-
     /* change size of 'about my' section */
     .sub-title{
         font-size:40px;
@@ -568,6 +520,10 @@ nav .fas{
     }
     .about-col-1{
         margin-bottom: 30px;
+        padding: 0;
+    }
+    .about-col-1 img{
+        position: relative;
     }
     .about-col-2{
         font-size: 14px;
@@ -577,5 +533,32 @@ nav .fas{
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    .intropic{
+        margin-top: 5%;
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content:center;
+    }
+    .intropic img{
+        width: 290px;
+        height:350px;
+    }
+    .header-text{
+        margin-top:350px;
+        font-size: 16px;
+        position:relative;
+        text-align: center;
+    }
+    .header-text h1{
+        font-size:30px;
     }
 }
