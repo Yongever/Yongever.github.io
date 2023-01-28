@@ -449,7 +449,7 @@ nav .fas{
 }
 /* whatever css properties added here will be applicable for the smaller screen */
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1400px){
     .row{
         display: flex;
         flex-wrap: wrap;
