@@ -79,6 +79,7 @@ nav ul li a:hover::after{
 .intropic{
     /* padding: 7% 16%; */
     padding: 8% 16%;
+    /* padding: 97px 195px; */
     /* padding: 10% 20%; */
 }
 .intropic img{
@@ -449,32 +450,7 @@ nav .fas{
 }
 /* whatever css properties added here will be applicable for the smaller screen */
 
-@media screen and (max-width:1400px){
-    /* .row{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:space-between;
-    }
-    .intropic{
-        margin-top: 5%;
-        display: flex;
-        justify-content:none;
-        padding:8%;
-    }
-    .intropic img{
-        width: 290px;
-        height:350px;
-    }
-    .header-text{
-        margin-top:200px;
-        font-size: 23px;
-        padding:0% 5%;
-        text-align: center;
-    }
-    .header-text h1{
-        font-size:30px;
-    } */
-    
+@media screen and (max-width:768px){    
     .row{
         display: flex;
         flex-wrap: wrap;
@@ -485,7 +461,15 @@ nav .fas{
         position: relative;
         width: 100%;
         display: flex;
-        justify-content:center;
+        justify-content:center; */
+        
+         /* flex-direction: column;
+        gap: 24px; */
+    }
+    .intropic > * {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
     }
     .intropic img{
         width: 290px;
@@ -500,6 +484,7 @@ nav .fas{
     .header-text h1{
         font-size:30px;
     }
+    
     nav{
         width:0%;
     }
@@ -534,7 +519,45 @@ nav .fas{
         left: 25px;
         cursor: pointer;
     }
-    /* change size of 'about my' section */
+    
+}
+@media screen and (min-width: 769px) and (max-width: 1500px) {
+    .container{
+        padding:0%;
+        /* width: 100%; */
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        /* width:100%; */
+    }
+    .intropic{
+        margin-top: 5%;
+        position: relative;
+        width: 50%;
+        
+        display: flex;
+        justify-content:center;
+    }
+    .intropic img{
+        width: 290px;
+        height:350px;
+        right:0px;
+    }
+    .header-text{
+        margin-top:20%;
+        font-size: 16px;
+        /* position:absolute; */
+        text-align: center;
+        width:50%;
+    }
+    .header-text h1{
+        font-size:30px;
+    }
+
+
+    /* change size of 'about my' section */    
     .sub-title{
         font-size:40px;
     }
@@ -558,33 +581,6 @@ nav .fas{
         flex-basis: 100%;
     }
 }
-/* @media screen and (max-width: 1399px) {
-    .row{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:center;
-    }
-    .intropic{
-        margin-top: 5%;
-        position: relative;
-        width: 100%;
-        display: flex;
-        justify-content:center;
-    }
-    .intropic img{
-        width: 290px;
-        height:350px;
-    }
-    .header-text{
-        margin-top:350px;
-        font-size: 16px;
-        position:relative;
-        text-align: center;
-    }
-    .header-text h1{
-        font-size:30px;
-    }
-} */
 /* @media screen and (min-width: 769px) and (max-width:1400px) {
     .row{
         display: flex;
