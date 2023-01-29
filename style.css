@@ -259,11 +259,6 @@ nav ul li a:hover::after{
     color: #080808;   
     text-align: center;
 }
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 .about-col-1{
     /* flex-basis: 35%; */
     padding: 5% 12%;   
@@ -378,6 +373,18 @@ nav ul li a:hover::after{
 }  */
 #contact{
     margin-top: 6%;
+    text-align: center;
+}
+.hello{
+    display:flex;
+    justify-content:space-between; 
+    flex-wrap:wrap; 
+}
+.row{
+    
+}
+.contact-left{
+    /* width:50%; */
 }
 .contact-left p{
     margin-top: 30px;
@@ -408,16 +415,19 @@ nav ul li a:hover::after{
     transform: translateY(-5px);
 }
 .btn.btn2{
-    display: inline-block; /*remove space   */
+    /*remove space   */
+    display: inline-block; 
     /* background: #ff004f; */
-
-    display:block;
-    /* margin: 90px auto; make space
-    /* width: fit-content; make it smaller */
-    /* border: 1px solid #6e716e; */
-    /* padding: 14px 50px; */
-    /* border-radius: 6px;  */
-    text-decoration: none; /*remove underline*/
+    /* display:block; */
+    /* make space */
+    margin: 50px auto; 
+    /* make it smaller */
+    /* width: fit-content;  */
+    border: 1px solid #6e716e;
+    padding: 14px 50px;
+    border-radius: 6px; 
+    /*remove underline*/
+    text-decoration: none; 
     color: 080808; 
 
     transition: background 0.5s;
@@ -426,7 +436,7 @@ nav ul li a:hover::after{
     width: 100%;
 }
 form input, form textarea{
-    width: 85%;
+    width: 80%;
     border:0;
     outline: none;
     background: #080808;
@@ -512,15 +522,10 @@ nav .fas{
     }    
 }
 @media screen and (min-width: 769px) and (max-width: 1500px) {
-    .container{
-        /* padding:0%; */
-        /* width: 100%; */
-    }
     .row{
         display: flex;
         flex-wrap: wrap;
         justify-content:center;
-        /* width:100%; */
     }
     .intropic{
         margin-top: 5%;
@@ -538,7 +543,6 @@ nav .fas{
     .header-text{
         margin-top:20%;
         font-size: 16px;
-        /* position:absolute; */
         text-align: center;
         width:50%;
     }
