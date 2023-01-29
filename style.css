@@ -375,14 +375,8 @@ nav ul li a:hover::after{
     margin-top: 6%;
     text-align: center;
 }
-.hello{
-    display:flex;
-    justify-content:space-between; 
-    flex-wrap:wrap; 
-}
-.row{
-    
-}
+
+
 .contact-left{
     /* width:50%; */
 }
