@@ -513,7 +513,7 @@ nav .fas{
 }
 @media screen and (min-width: 769px) and (max-width: 1500px) {
     .container{
-        padding:0%;
+        /* padding:0%; */
         /* width: 100%; */
     }
     .row{
@@ -570,3 +570,4 @@ nav .fas{
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
+}
