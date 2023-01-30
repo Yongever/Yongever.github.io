@@ -375,8 +375,6 @@ nav ul li a:hover::after{
     margin-top: 6%;
     text-align: center;
 }
-
-
 .contact-left{
     /* width:50%; */
 }
@@ -499,7 +497,6 @@ nav .fas{
         width: 180px;
         height: 100vh;
         padding-top: 50px;
-
         z-index:2;
         transition: right 0.5s;
     }
@@ -536,12 +533,12 @@ nav .fas{
     }
     .header-text{
         margin-top:20%;
-        font-size: 16px;
+        font-size: 21px;
         text-align: center;
         width:50%;
     }
     .header-text h1{
-        font-size:30px;
+        font-size: 40px;
     }
 }
 @media screen and (max-width: 1500px) {
